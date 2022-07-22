@@ -1,0 +1,413 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-size: 24px;
+  color: #ffffff;
+  display: inline-block;
+  padding: 1rem 5rem;
+  border: 1px solid #0f0f0f;
+  border-radius: 8px;
+  background: #0f0f0f;
+  text-transform: uppercase;
+  margin-bottom: 5.5rem;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+/* PowerSteel Pan Image */
+.powersteel-pan-image {
+  margin-bottom: 7rem;
+}
+
+/* PLY Technology */
+.ply-technology {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.ply-technology h2 {
+  font-weight: 500;
+  font-size: 3.8rem;
+  line-height: 70px;
+  margin-bottom: 3rem;
+}
+
+.ply-technology p {
+  font-size: 2.1rem;
+  line-height: 42px;
+}
+
+.ply-technology .first-paragraph {
+  padding: 0 7rem;
+}
+
+.ply-technology .second-paragraph {
+  margin-bottom: 2rem;
+  padding: 0 8rem;
+}
+
+/* Layers */
+.layers-image {
+  margin-bottom: 10rem;
+}
+
+/* Features */
+.features {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+  background: url("/images/tava.png") no-repeat;
+  background-position-x: 55%;
+  background-position-y: 0;
+  margin-bottom: 4.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "feature-1 . feature-2"
+    "feature-3 feature-5 feature-4";
+}
+
+.features h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 1rem;
+}
+
+.features p {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.feature-1 {
+  grid-area: feature-1;
+  margin-bottom: 14rem;
+  position: relative;
+}
+
+.feature-1 p {
+  width: 92%;
+  margin: auto;
+}
+
+.feature-1::before {
+  position: absolute;
+  content: url("/images/vector-esit-isi-dagilimi.png");
+  right: 0;
+  bottom: 0;
+  transform: translate(45%, 100%);
+}
+
+.feature-2 {
+  grid-area: feature-2;
+  margin-bottom: 14rem;
+  position: relative;
+}
+
+.feature-2 p {
+  width: 101%;
+  margin: auto;
+}
+
+.feature-2::before {
+  position: absolute;
+  content: url("/images/vector-uzun-omurlu-tasarım.png");
+  left: 0;
+  bottom: 5px;
+  transform: translate(10%, 100%);
+}
+
+.feature-3 {
+  grid-area: feature-3;
+  margin-right: 5rem;
+  position: relative;
+  height: max-content;
+}
+
+.feature-3::before {
+  position: absolute;
+  content: url("/images/vector-induksiyona-uygun.png");
+  right: 0;
+  bottom: 0;
+  transform: translate(75%, 40%);
+}
+
+.feature-4 {
+  grid-area: feature-4;
+  margin-left: 5rem;
+  position: relative;
+  height: max-content;
+}
+
+.feature-4::before {
+  position: absolute;
+  content: url("/images/vector-petek-dokulu-ic-taban.png");
+  left: 0;
+  bottom: 0;
+  transform: translate(-53%, 54%);
+}
+
+.feature-5 {
+  grid-area: feature-5;
+  margin-top: 15rem;
+  position: relative;
+}
+
+.feature-5 h2 {
+  margin-top: 1.4rem;
+}
+
+.feature-5::before {
+  position: absolute;
+  content: url("/images/vector-daha-lezzetli-yemekler.png");
+  left: 52%;
+  top: -156%;
+  transform: translate(-53%, 54%);
+}
+
+/* Guarentee Image */
+.guarentee-image {
+  margin-bottom: 5rem;
+}
+
+.guarentee-image img {
+  display: block;
+}
+
+/* Product Button */
+.product-button {
+  text-align: center;
+}
+
+.product-button a {
+  margin-bottom: 2rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .powersteel-pan-image {
+    margin-bottom: 5rem;
+  }
+
+  .ply-technology {
+    width: 90%;
+  }
+
+  .ply-technology h2 {
+    font-size: 3rem;
+    margin-bottom: 2.1rem;
+    line-height: 3.4rem;
+  }
+
+  .ply-technology .first-paragraph,
+  .ply-technology .second-paragraph {
+    padding: 0 3rem;
+    font-size: 1.8rem;
+    line-height: 33px;
+  }
+
+  .button {
+    margin-bottom: 4.5rem;
+    padding: 1.2rem 6rem;
+    font-size: 1.8rem;
+  }
+
+  .layers-image {
+    margin-bottom: 8rem;
+  }
+
+  .features {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-top: 38rem;
+  }
+
+  .features h2 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 0.83rem;
+  }
+
+  .features p {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .feature {
+    margin: 0;
+  }
+
+  .feature-2 {
+    order: 3;
+  }
+
+  .feature-3 {
+    order: 4;
+  }
+
+  .feature-4 {
+    order: 2;
+  }
+
+  .feature-5 {
+    order: 5;
+  }
+
+  .feature-5 h2 {
+    margin-top: 0;
+  }
+
+  .feature::before {
+    content: none;
+  }
+
+  .guarentee-image {
+    margin-bottom: 3.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .powersteel-pan-image {
+    margin-bottom: 3rem;
+  }
+
+  .ply-technology {
+    width: 95%;
+  }
+
+  .ply-technology h2 {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .ply-technology .first-paragraph,
+  .ply-technology .second-paragraph {
+    padding: 0 1.2rem;
+    font-size: 1.4rem;
+    line-height: 22px;
+  }
+
+  .button {
+    margin-bottom: 3.5rem;
+    font-size: 1.4rem;
+    padding: 0.9rem 4rem;
+  }
+
+  .layers-image {
+    margin-bottom: 6rem;
+  }
+
+  .features {
+    width: 80%;
+    background: url("/images/tava-mobil.png") no-repeat;
+    background-size: contain;
+    min-width: 350px;
+    background-position-x: 55%;
+    background-position-y: 0;
+  }
+
+  .features h2 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 0.66rem;
+  }
+
+  .features p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .guarentee-image {
+    margin-bottom: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .features {
+    padding-top: 30rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .powersteel-pan-image {
+    margin-bottom: 1.5rem;
+  }
+
+  .ply-technology {
+    width: 98%;
+  }
+
+  .ply-technology h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.9rem;
+    line-height: 1.6rem;
+  }
+
+  .ply-technology .first-paragraph,
+  .ply-technology .second-paragraph {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  .button {
+    margin-bottom: 2.5rem;
+    font-size: 0.9rem;
+    padding: 0.8rem 2.7rem;
+  }
+
+  .layers-image {
+    margin-bottom: 4rem;
+  }
+
+  .features {
+    width: 60%;
+    padding-top: 24rem;
+  }
+
+  .features h2 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 0.5rem;
+  }
+
+  .features p {
+    font-size: 14px;
+    line-height: 17px;
+    width: 74%;
+    margin: auto;
+  }
+
+  .guarentee-image {
+    margin-bottom: 1.7rem;
+  }
+}
