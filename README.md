@@ -10,7 +10,7 @@
 
 ### Links
 
-- Live Site URL: [Github Pages](https://thaykrgl.github.io/karaca-test-case/)
+- Live Site URL: [Netlify](https://fastidious-melba-7fb94d.netlify.app/)
 
 ### Built with
 
